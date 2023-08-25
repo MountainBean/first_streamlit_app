@@ -57,5 +57,6 @@ if streamlit.button("Get Fruit Load List"):
 fruit_addition = streamlit.text_input('What fruit would you like to add?','Jackfruit')
 streamlit.write('Thanks for adding ', fruit_addition)
 
+streamlit.stop()
 
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
